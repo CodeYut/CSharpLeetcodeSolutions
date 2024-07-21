@@ -16,16 +16,16 @@ public class Solution {
             j++;  
         }
 
-        while (i < word1.Length) {
+        while (i < word1.Length) {  //Once the while condition above is no longer met we take i and try to append any additional characters in the word1 string to res.
             res.Append(word1[i]);
             i++;
         }
 
-        while (j < word2.Length) {
+        while (j < word2.Length) {  //If i has run out of characters, j goes through the same process of appending anything left over in word2.
             res.Append(word2[j]);
             j++;
         }
 
-        return res.ToString();
+        return res.ToString();  //Simply return the res StringBuilder as a new string.
     }
 }
