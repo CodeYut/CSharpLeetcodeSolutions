@@ -7,7 +7,7 @@ public class Solution {
                                                   //which requires a new allocation of space for that new object.  Repeated modifications to a string is costly so StringBuilder 
                                                   //prevents the creation of a new object.
       
-        int i = 0;  //Here were creating our two pointers to iterate through our array.                              
+        int i = 0;  //Here were creating our two pointers to iterate through our array.  Setting them to 0 initializes them.                             
         int j = 0;
 
         while (i < word1.Length && j < word2.Length) {
