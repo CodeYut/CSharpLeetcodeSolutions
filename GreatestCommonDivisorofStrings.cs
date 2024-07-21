@@ -2,12 +2,15 @@
 
 
 public class Solution {
+    //We need to create a seperate method to deal with the math side of the strings.  We try to eliminate certain edge cases like when n2 doesnt exist.
     public int gcd(int n1, int n2) {
-        if (n2 == 0) {
+        if (n2 == 0) {  //Were weeding out the possibility that the n2 string could be empty, returning n1 only.
             return n1;
         }
-        else {
+        else {  
             return gcd(n2, n1 % n2);
+            //When we dont meet the IF criteria we want to figure out the remainder of n1 modulus n2.  
+            //The remainder operator "%" divides the left hand operand by the right hand operand and returns how many whole times the number is divisible.
         }
     }
 
