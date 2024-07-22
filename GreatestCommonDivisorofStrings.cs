@@ -15,16 +15,16 @@ public class Solution {
     }
 
     public string GcdOfStrings(string str1, string str2) {
-        int len1 = str1.Length;
+        int len1 = str1.Length;  //Here were initializing the string lengths.
         int len2 = str2.Length;
 
-        if ((str1 + str2).Equals(str2 + str1)) {
+        if ((str1 + str2).Equals(str2 + str1)) {  //Were checking if the strings are equal here and then returning the substring.
             int index = gcd(len1, len2);
 
-            return str1.Substring(0, index);
+            return str1.Substring(0, index);  //Substring returns some portion of the string, determined by the contstrains inside the Substring()
         }
         else {
-            return "";
+            return "";  // returns empty string if the above logic doesnt check out
         }
     }
 }
